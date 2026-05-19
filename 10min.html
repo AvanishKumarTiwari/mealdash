@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Explorer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#" class="logo">
+                <img src="images/10min/Logo.png" alt="logo" />
+                <span>Food Explorer</span>
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Tiffin.html">Tiffin</a></li>
+            <li><a href="varieties.html">Varieties</a></li>
+            <li><a href="10min.html">10min</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <button class="btn">
+                <span><i class="ri-login-box-line"></i></span>
+                Login
+              </button>
+            </li>
+          </ul>
+          <div class="nav__btns">
+            <a href="login.html">
+              <button class="btn">
+                  <span><i class="ri-login-box-line"></i></span>
+                  Login
+              </button>
+          </a>
+          </div>
+        </nav>
+    <section class="section__container order__container" id="menu">
+        <h3>Food Explorer</h3>
+        <h2 class="section__header">Get 10min service from the Food Explorer</h2>
+        <p class="section__description">
+          With our 10-Minute Service, you never have to sacrifice health for speed when it comes to your meals.
+        </p>
+
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="images/10min/Vegetable_Sandwich.png" alt="order" /><br>
+            <h4>Vegetable Sandwich</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Bread, cucumber, tomato, onion<br>
+              Green chutney, butter, salt, pepper<br><br>
+
+              <b>Process:</b><br>
+              "Spread butter and chutney on bread."<br>
+              "Add veggies, season, and close sandwich."<br><br>
+
+              <b>Benefits:</b><br>
+              "Full of fiber and vitamins."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Poha.png" alt="order" /><br>
+            <h4>Poha</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup flattened rice (poha)<br>
+              1 small onion, green chili, curry leaves<br>
+              Peanuts, turmeric, salt<br><br>
+
+              <b>Process:</b><br>
+              "Rinse poha and drain."<br>
+              "Sauté peanuts, onions, curry leaves, and turmeric."<br>
+              "Mix in poha and cook for 2-3 mins."<br><br>
+
+              <b>Benefits:</b><br>
+              "Light, iron-rich, easy to digest."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Bread_Omelette.png" alt="order" />
+            <h4>Bread Omelette</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              2 eggs, 2 bread slices<br>
+              Onion, tomato, green chili<br>
+              Salt, pepper<br><br>
+
+              <b>Process:</b><br>
+              "Mix eggs, veggies, salt, and pepper."<br>
+              "Cook on a pan with bread slices on top."<br><br>
+
+              <b>Benefits:</b><br>
+              "Protein-rich, quick energy from bread."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Besan_Chilla.png" alt="order" />
+            <h4>Besan Chilla</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup besan, onion, tomato<br>
+              Green chili, turmeric, salt<br><br>
+
+              <b>Process:</b><br>
+              "Mix all ingredients with water to make batter."<br>
+              "Pour on a pan and cook both sides."<br><br>
+
+              <b>Benefits:</b><br>
+              "Protein-packed, filling and healthy."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Bhel_Puri.png" alt="order" />
+            <h4>Bhel Puri</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Puffed rice, onion, tomato<br>
+              Green chutney, tamarind chutney, sev<br><br>
+
+              <b>Process:</b><br>
+              "Mix puffed rice, veggies, and chutneys."<br>
+              "Add sev, serve immediately."<br><br>
+
+              <b>Benefits:</b><br>
+              "Low-calorie, high in fiber."<br>
+            </p>
+          </div>
+          
+          <div class="order__card">
+            <img src="images/10min/Masala_Bhutta.png" alt="order" /><br><br>
+            <h4>Masala Bhutta</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Corn on the cob<br>
+              Lemon, chili powder, salt<br><br>
+
+              <b>Process:</b><br>
+              "Roast corn over a flame."<br>
+              "Rub lemon, chili powder, and salt."<br><br>
+
+              <b>Benefits:</b><br>
+              "High in fiber and antioxidants."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Fruit_Chaat.png" alt="order" />
+            <h4>Fruit Chaat </h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Chopped fruits<br>
+              Lemon juice, chaat masala<br><br>
+
+              <b>Process:</b><br>
+              "Mix fruits with lemon juice and chaat masala."<br>
+              "Serve fresh."<br><br>
+
+              <b>Benefits:</b><br>
+              "Full of vitamins and antioxidants."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Schezwan_Bread_Toast.png" alt="order" />
+            <h4>Schezwan Bread Toast</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Bread, schezwan sauce, butter<br><br>
+
+              <b>Process:</b><br>
+              "Spread schezwan sauce on bread."<br>
+              "Toast with butter on a pan."<br><br>
+
+              <b>Benefits:</b><br>
+              "Spicy, filling, and energizing."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Paneer_Salad.png" alt="order" /><br>
+            <h4>Paneer Salad</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 tomato, chopped, lemon juice<br>
+              1 cup paneer cubes, 1 small cucumber, chopped<br><br>
+
+              <b>Process:</b><br>
+              "Mix paneer with cucumber and tomato."<br>
+              "Add lemon juice and serve."<br><br>
+
+              <b>Benefits:</b><br>
+              "Protein-rich, refreshing."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Cheese_Nachos.png" alt="order" />
+            <h4>Cheese Nachos</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup tortilla chips, ½ cup grated cheese<br>
+              Salsa (optional), jalapenos (optional)<br><br>
+
+              <b>Process:</b><br>
+              "Spread cheese over tortilla chips."<br>
+              "Microwave until cheese melts, serve with salsa."<br><br>
+
+              <b>Benefits:</b><br>
+              "Quick snack, rich in calcium.
+              "<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Egg_Salad_Sandwich.png" alt="order" />
+            <h4>Egg Salad Sandwich</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              2 boiled eggs, 2 slices of bread<br>
+              1 tbsp mayonnaise, salt, and pepper<br><br>
+
+              <b>Process:</b><br>
+              "Chop boiled eggs, mix with mayonnaise."<br>
+              "Spread on bread, season, and serve."<br><br>
+
+              <b>Benefits:</b><br>
+              "Protein-packed, easy to prepare."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Spicy_Popcorn.png" alt="order" />
+            <h4>Spicy Popcorn</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup popcorn kernels, 1 tsp chili powder.<br>
+              1 tbsp oil, salt.<br><br>
+
+              <b>Process:</b><br>
+              "Pop kernels in oil, add chili powder and salt."<br>
+              "Toss well and serve."<br><br>
+
+              <b>Benefits:</b><br>
+              "Low-calorie snack, high in fiber."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Instant_Noodles.png" alt="order" />
+            <h4>Instant Noodles</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 packet instant noodles, 1 cup mixed veggies.<br>
+              Spices (from noodle packet), water<br><br>
+
+              <b>Process:</b><br>
+              "Boil noodles with vegetables and spices."<br>
+              "Serve hot."<br><br>
+
+              <b>Benefits:</b><br>
+              "Quick, filling, and flavorful."<br>
+            </p>
+          </div>
+
+          
+          <div class="order__card"><br>
+            <img src="images/10min/Paneer_Pakora.png" alt="order" /><br>
+            <h4>Paneer Pakora</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup paneer, sliced.<br>
+              Besan (gram flour), spices (chili powder, salt), oil.<br><br>
+
+              <b>Process:</b><br>
+              "Coat paneer slices with besan and spices."<br>
+              "Deep fry until golden."<br><br>
+
+              <b>Benefits:</b><br>
+              "Crispy snack, high in protein."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Instant_Bread_Pizza.png" alt="order" /><br><br>
+            <h4>Instant Bread Pizza</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              2 slices of bread, ½ cup grated cheese.<br>
+              Tomato ketchup, veggies (capsicum, onion).<br><br>
+
+              <b>Process:</b><br>
+              "Spread ketchup on bread, top with veggies and cheese."<br>
+              "Microwave or grill for 3 minutes."<br><br>
+
+              <b>Benefits:</b><br>
+              "Quick and cheesy snack, rich in calcium and vitamins."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Gajar_Ka_Halwa.png" alt="order" />
+            <h4>Gajar Ka Halwa</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup grated carrot, ½ cup milk.<br>
+              2 tbsp sugar, cardamom powder.<br><br>
+
+              <b>Process:</b><br>
+              "Cook carrots in milk until soft, add sugar."<br>
+              "Stir until it thickens, garnish with nuts."<br><br>
+
+              <b>Benefits:</b><br>
+              "Sweet treat, rich in vitamins."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Chana_Masala.png" alt="order" />
+            <h4>Chana Masala</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup boiled chickpeas, spices.<br>
+              Onion, tomato, oil.<br><br>
+
+              <b>Process:</b><br>
+              "onion and tomato, add chickpeas and spices, cook briefly."<br>
+              "Serve hot."<br><br>
+
+              <b>Benefits:</b><br>
+              "High in protein and fiber."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Boiled_Egg_Chaat.png" alt="order" />
+            <h4>Boiled Egg Chaat</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Boiled eggs, onion, tomato, chutney<br><br>
+
+              <b>Process:</b><br>
+              "Chop boiled eggs, mix with veggies and chutney."<br>
+              "Serve immediately."<br><br>
+
+              <b>Benefits:</b><br>
+              "Rich in protein and good fats."<br>
+            </p>
+          </div>
+
+          <div class="order__card"><br><br>
+            <img src="images/10min/Avocado_Toast.png" alt="order" /><br>
+            <h4>Avocado Toast</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              2 slices of bread, 1 ripe avocado<br>
+              Salt, pepper, lemon juice<br><br>
+
+              <b>Process:</b><br>
+              "Mash avocado and season with salt, pepper, and lemon juice."<br>
+              "Spread on toasted bread."<br><br>
+
+              <b>Benefits:</b><br>
+              "Healthy fats, quick and nutritious."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Masala_Oats.png" alt="order" />
+            <h4>Masala Oats</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 cup instant oats, 1 small onion, chopped<br>
+              1 tomato, chopped, spices (cumin, chili powder)<br><br>
+
+              <b>Process:</b><br>
+              "Sauté onions and tomatoes with spices."<br>
+              "Add oats and water, cook for 3-4 minutes."<br><br>
+
+              <b>Benefits:</b><br>
+              "High in fiber, quick and filling."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Roti_roll.png" alt="order" />
+            <h4> Roti Roll </h4>
+            <p>
+              <b>Ingredients:</b><br>
+              1 roti, paneer cubes or cooked veggies<br>
+              Green chutney, ketchup<br><br>
+
+              <b>Process:</b><br>
+              "Spread chutney on roti."<br>
+              "Add paneer or veggies, roll up and serve."<br><br>
+
+              <b>Benefits:</b><br>
+              "Quick meal rich in protein and carbs."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Masala_Macaroni.png" alt="order" />
+            <h4>Masala Macaroni </h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Cooked macaroni, tomato sauce, veggies<br>
+              Salt, pepper<br><br>
+
+              <b>Process:</b><br>
+              "Mix macaroni with veggies and sauce."<br>
+              "Microwave for 2 mins, serve hot."<br><br>
+
+              <b>Benefits:</b><br>
+              "Comfort food, rich in carbs and fiber."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Peanut_Chaat.png" alt="order" />
+            <h4>Peanut Chaat</h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Roasted peanuts, onion, tomato<br>
+              Green chili, lemon juice, salt<br><br>
+
+              <b>Process:</b><br>
+              "Mix all ingredients."<br>
+              "Serve fresh."<br><br>
+
+              <b>Benefits:</b><br>
+              "Good protein, heart-healthy fats."<br>
+            </p>
+          </div>
+
+          <div class="order__card">
+            <img src="images/10min/Paneer_Tikka .png" alt="order" />
+            <h4>Paneer Tikka </h4>
+            <p>
+              <b>Ingredients:</b><br>
+              Paneer cubes, yogurt, spices<br>
+              Lemon juice, salt<br><br>
+
+              <b>Process:</b><br>
+              "Marinate paneer in yogurt and spices."<br>
+              "Microwave for 2-3 mins."<br><br>
+
+              <b>Benefits:</b><br>
+              "Protein-rich, low in fat."<br>
+            </p>
+          </div>
+         
+        </section>
+        <footer>
+            <div class="section__container footer__container">
+              <div class="footer__col">
+                <div class="footer__logo">
+                  <a href="#" class="logo">
+                    <img src="images/10min/Logo.png" alt="logo" />
+                    <span>Food Explorer</span>
+                  </a>
+                </div>
+                <p class="section__description">
+                    Delivering fresh, healthy food while maintaining high standards of quality and care.
+                </p>
+                <ul class="footer__socials">
+                  <li>
+                    <a href="https://www.instagram.com/foodexplorer1305/profilecard/?igsh=NmcxdW92a3hzdjds"><i class="ri-instagram-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/share/LLZrWz44UMQRDznj/"><i class="ri-facebook-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>About</h4>
+                <ul class="footer__links">
+                  <li><a href="varieties.html">Features</a></li>
+                  <li><a href="Tiffin.html">Menu</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                  <li><a href="index.html">Why choose us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Support</h4>
+                <ul class="footer__links">
+                  <li><a href="login.html">Account</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bar">
+              Copyright © 2024 Food Explorer. All rights reserved.
+            </div>
+          </footer>
+        <script src="main.js"></script>
+        <script src="custom.js"></script>
+        
+</body>
+</html>

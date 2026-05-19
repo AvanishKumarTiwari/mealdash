@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffin Provider Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Light Blue Theme */
+body {
+  background-color: #eaf6ff; /* Light blue background */
+  color: #333;
+}
+
+/* Header Section */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #007acc; /* Deep blue header */
+  color: white;
+}
+
+.dashboard-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.dashboard-header .dashboard-nav .logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-header .dashboard-nav .logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* Main Section */
+.dashboard-main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.welcome-section h1 {
+  color: #007acc;
+}
+
+.status-message {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.action-card h3 {
+  margin-bottom: 0.5rem;
+  color: #007acc;
+}
+
+.action-card p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.action-card button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.action-card button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer Section */
+.dashboard-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f8ff;
+  margin-top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <div class="logo">
+        <img src="images/Home/Logo.png" alt="Food Explorer Logo">
+        <span>Food Explorer</span>
+      </div>
+      <nav class="dashboard-nav">
+        <a href="logout.html" class="logout-btn">Logout</a>
+      </nav>
+    </header>
+
+    <main class="dashboard-main">
+      <div class="welcome-section">
+        <h1>Welcome, Provider!</h1>
+        <p class="status-message">Onboarding Process is in Progress. Please complete the steps below:</p>
+      </div>
+      
+      <div class="actions">
+        <div class="action-card">
+          <h3>Update Profile</h3>
+          <p>Update your business details and address.</p>
+          <button onclick="alert('Link to update will shortly Activate t update...')">Go to Profile</button>
+        </div>
+        <div class="action-card">
+          <h3>Upload Menu</h3>
+          <p>Upload your menu items to get started.</p>
+          <button onclick="alert('Link to update will shortly Activate t update...')">Upload</button>
+        </div>
+        <div class="action-card">
+          <h3>Track Progress</h3>
+          <p>Check the status of your onboarding.</p>
+          <button onclick="alert('Link to update will shortly Activate t update...')">View Status</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="dashboard-footer">
+      <p>© 2024 Food Explorer. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    
+    const user = localStorage.getItem('user');
+    const provider = localStorage.getItem('provider');
+
+    if (user || provider) {
+      
+      alert('You are already logged in!');
+    }else{
+        alert('Login First! Please to access');
+        window.location.href = "Tiffin_provider's_login.html"; 
+
+    }
+  });
+  </script>
+</body>
+</html>

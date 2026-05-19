@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+    <title>Food Explorer</title>
+  </head>
+  
+  <body>
+    <header>
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#" class="logo">
+                <img src="images/Home/Logo.png" alt="logo" />
+                <span>Food Explorer</span>
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Tiffin.html">Tiffin</a></li>
+            <li><a href="varieties.html">Varieties</a></li>
+            <li><a href="10min.html">10min</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+            </li>
+          </ul>
+          <div class="nav__btns">
+          </div>
+        </nav>
+
+        <div class="order-container">
+            <h2>Place Your Order</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" required>
+                    <label>Contact No</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <select name="fooditems" id="fooditems" style="width: 100%;
+                    padding: 12px;
+                    border: 0;
+                    border-radius: 5px; outline: 0;">
+                      <option value="Select" selected>Select What You want to Order</option>
+                      <option value="Noida's Fresh kitchen">Noida's Fresh kitchen</option>
+                      <option value="Healthy Foods Tiffin Services">Healthy Foods Tiffin Services</option>
+                      <option value="Homemade Tiffin Service">Homemade Tiffin Service</option>
+                      <option value="The Tiffin service Noida">The Tiffin service Noida</option>
+                      <option value="Shree Shyama Tiffin Service">Shree Shyama Tiffin Service</option>
+                      <option value="Home Food Factory">Home Food Factory</option>
+                      <option value="Delicious Tiffin ">Delicious Tiffin </option>
+                      <option value="Foody Hub Tiffin Service">Foody Hub Tiffin Service</option>
+                      <option value="Charu's Kitchen">Charu's Kitchen</option>
+                      <option value="The Home Foodie">The Home Foodie</option>
+                      <option value="OMKITCHEN">OMKITCHEN</option>
+                      <option value="Tiffinshala">Tiffinshala</option>
+                      <option value="Ghar ka khana">Ghar ka khana</option>
+                      <option value="Grihini Kitchen">Grihini Kitchen</option>
+                      <option value="Squeezy Twist">Squeezy Twist</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Address</label>
+                </div>
+                <div class="payment-group">
+                    <label>Payment Method</label>
+                    <div class="cod-option">
+                        <input type="radio" id="cod" name="payment" value="cod" checked>
+                        <label for="cod">Cash on Delivery (COD)</label>
+                    </div>
+                </div><br>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+        
+      
+        <footer>
+            <div class="section__container footer__container">
+              <div class="footer__col">
+                <div class="footer__logo">
+                  <a href="#" class="logo">
+                    <img src="images/Home/Logo.png" alt="logo" />
+                    <span>Food Explorer</span>
+                  </a>
+                </div>
+                <p class="section__description">
+                  Delivering fresh, healthy food while maintaining high standards of quality and care.
+                </p>
+                <ul class="footer__socials">
+                  <li>
+                    <a href="https://www.instagram.com/foodexplorer1305/profilecard/?igsh=NmcxdW92a3hzdjds"><i class="ri-instagram-fill"></i></a>
+                  </li>
+                    <a href="https://www.facebook.com/share/LLZrWz44UMQRDznj/"><i class="ri-facebook-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/foodexplore1305"><i class="ri-twitter-fill"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>About</h4>
+                <ul class="footer__links">
+                  <li><a href="varieties.html">Features</a></li>
+                  <li><a href="Tiffin.html">Menu</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                  <li><a href="index.html">Why choose us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Support</h4>
+                <ul class="footer__links">
+                  <li><a href="login.html">Account</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bar">
+              Copyright © 2024 Food Explorer. All rights reserved.
+            </div>
+          </footer>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="main.js"></script>
+            <script src="apis.js"></script>
+             
+          </body>
+          </html>
+      

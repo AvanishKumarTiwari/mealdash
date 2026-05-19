@@ -1,0 +1,371 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      margin-top: 80px; 
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content h2 {
+      font-size: 26px;
+      color: #6a11cb;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #6a11cb;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .order-container {
+      width: 100%;
+      max-width: 800px;
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    .order-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .order-container h3 {
+      font-size: 20px;
+      color: #2575fc;
+      margin-bottom: 10px;
+    }
+    .order-details span {
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .order-details strong {
+      color: #333;
+    }
+
+    .order-actions {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .order-actions button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s;
+    }
+    .order-actions .approve {
+      background-color: #28a745;
+      color: white;
+    }
+    .order-actions .approve:hover {
+      background-color: #218838;
+      transform: translateY(-3px);
+    }
+    .order-actions .reject {
+      background-color: #dc3545;
+      color: white;
+    }
+    .order-actions .reject:hover {
+      background-color: #c82333;
+      transform: translateY(-3px);
+    }
+
+    .footer {
+      margin-top: auto;
+      background: #2575fc;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 400;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Admin Dashboard</h1>
+  </div>
+
+  <div class="content">
+    <h2>All Orders</h2>
+    <div id="orders"></div>
+  </div>
+
+  <script>
+    const apiEndpoint = "http://localhost:6001/v2/api/getorder";
+
+    async function fetchOrders() {
+      try {
+        const response = await fetch(apiEndpoint);
+        const data = await response.json();
+
+        if (data.result && data.result.length > 0) {
+          const ordersContainer = document.getElementById("orders");
+          data.result.forEach(order => {
+            const orderDiv = document.createElement("div");
+            orderDiv.classList.add("order-container");
+            orderDiv.innerHTML = `
+              <h3>Order ID: ${order.id}</h3>
+              <div class="order-details">
+                <span><strong>Name:</strong> ${order.name}</span>
+                <span><strong>Contact:</strong> ${order.contact_no}</span>
+                <span><strong>Email:</strong> ${order.email}</span>
+                <span><strong>Items:</strong> ${order.Ordered_items}</span>
+                <span><strong>Address:</strong> ${order.address}</span>
+              </div>
+            
+            `;
+            ordersContainer.appendChild(orderDiv);
+          });
+        } else {
+          document.getElementById("orders").innerText = "No orders found.";
+        }
+      } catch (error) {
+        console.error("Error fetching orders:", error);
+      }
+    }
+
+    function handleAction(orderId, action) {
+      alert(`Order ID ${orderId} ${action}d successfully!`);
+    }
+
+    fetchOrders();
+  </script>
+</body>
+</html>
+=======
+=======
+>>>>>>> added_provider_backend
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      margin-top: 80px; 
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content h2 {
+      font-size: 26px;
+      color: #6a11cb;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #6a11cb;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .order-container {
+      width: 100%;
+      max-width: 800px;
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+    .order-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .order-container h3 {
+      font-size: 20px;
+      color: #2575fc;
+      margin-bottom: 10px;
+    }
+    .order-details span {
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .order-details strong {
+      color: #333;
+    }
+
+    .order-actions {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .order-actions button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s;
+    }
+    .order-actions .approve {
+      background-color: #28a745;
+      color: white;
+    }
+    .order-actions .approve:hover {
+      background-color: #218838;
+      transform: translateY(-3px);
+    }
+    .order-actions .reject {
+      background-color: #dc3545;
+      color: white;
+    }
+    .order-actions .reject:hover {
+      background-color: #c82333;
+      transform: translateY(-3px);
+    }
+
+    .footer {
+      margin-top: auto;
+      background: #2575fc;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 400;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Admin Dashboard</h1>
+  </div>
+
+  <div class="content">
+    <h2>All Orders</h2>
+    <div id="orders"></div>
+  </div>
+
+  <script>
+    const apiEndpoint = "http://localhost:6001/v2/api/getorder";
+
+    async function fetchOrders() {
+      try {
+        const response = await fetch(apiEndpoint);
+        const data = await response.json();
+
+        if (data.result && data.result.length > 0) {
+          const ordersContainer = document.getElementById("orders");
+          data.result.forEach(order => {
+            const orderDiv = document.createElement("div");
+            orderDiv.classList.add("order-container");
+            orderDiv.innerHTML = `
+              <h3>Order ID: ${order.id}</h3>
+              <div class="order-details">
+                <span><strong>Name:</strong> ${order.name}</span>
+                <span><strong>Contact:</strong> ${order.contact_no}</span>
+                <span><strong>Email:</strong> ${order.email}</span>
+                <span><strong>Items:</strong> ${order.Ordered_items}</span>
+                <span><strong>Address:</strong> ${order.address}</span>
+              </div>
+            
+            `;
+            ordersContainer.appendChild(orderDiv);
+          });
+        } else {
+          document.getElementById("orders").innerText = "No orders found.";
+        }
+      } catch (error) {
+        console.error("Error fetching orders:", error);
+      }
+    }
+
+    function handleAction(orderId, action) {
+      alert(`Order ID ${orderId} ${action}d successfully!`);
+    }
+
+    fetchOrders();
+  </script>
+</body>
+</html>
+<<<<<<< HEAD
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+>>>>>>> added_provider_backend

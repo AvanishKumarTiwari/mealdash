@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css" />
+    <title>Food Explorer</title>
+    <style>
+      #btxxx:hover{
+        cursor: pointer;
+        background: blue !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#" class="logo">
+                <img src="images/Home/Logo.png" alt="logo" />
+                <span>Food Explorer</span>
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Tiffin.html">Tiffin</a></li>
+            <li><a href="varieties.html">Varieties</a></li>
+            <li><a href="10min.html">10min</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+            </li>
+          </ul>
+          <div class="nav__btns">
+          </div>
+        </nav>
+
+        <div class="login-container">
+          <input type="radio" id="loginToggle" name="formToggle" checked>
+          <input type="radio" id="signUpToggle" name="formToggle">
+      
+          <div class="form" id="loginForm">
+              <h2> Provider's Register</h2>
+              <form id="signupForm">
+                  <div class="input-group">
+                      <input type="text" required id="fullname">
+                      <label>Full Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" required id="email">
+                    <label>Email</label>
+                </div>
+                  <div class="input-group">
+                      <input type="password" required id="password">
+                      <label>Password</label>
+                  </div>
+                  <div class="input-group">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <input type="text" required>
+                    <label>Owner Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" required>
+                    <label>Tiffin Service Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" required>
+=======
+=======
+>>>>>>> added_provider_backend
+                    <input type="text" id="ownername" placeholder="Enter owner's name" required>
+                    <label>Owner Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" required id="tifinservicename">
+                    <label>Tiffin Service Name</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" required id="serviceaddress">
+<<<<<<< HEAD
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+>>>>>>> added_provider_backend
+                    <label>Service Address</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="tel" required>
+                    <label>Contact</label>
+                  </div>
+                  <button type="submit"style="background-color: rgba(60, 55, 224, 0.896);" id="btxxx"> Signup</button>
+                  <p class="toggle-text">Already have an account? <label for="signUpToggle" class="toggle-link"><a href="Tiffin_provider's_login.html">Login</a></label></p>
+              </form>
+          </div>
+              </form>
+          </div>
+      </div>
+      
+        <footer>
+            <div class="section__container footer__container">
+              <div class="footer__col">
+                <div class="footer__logo">
+                  <a href="#" class="logo">
+                    <img src="images/Home/Logo.png" alt="logo" />
+                    <span>Food Explorer</span>
+                  </a>
+                </div>
+                <p class="section__description">
+                  Delivering fresh, healthy food while maintaining high standards of quality and care.
+                </p>
+                <ul class="footer__socials">
+                  <li>
+                    <a href="https://www.instagram.com/foodexplorer1305/profilecard/?igsh=NmcxdW92a3hzdjds"><i class="ri-instagram-fill"></i></a>
+                  </li>
+                    <a href="https://www.facebook.com/share/LLZrWz44UMQRDznj/"><i class="ri-facebook-fill"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/foodexplore1305"><i class="ri-twitter-fill"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>About</h4>
+                <ul class="footer__links">
+                  <li><a href="varieties.html">Features</a></li>
+                  <li><a href="Tiffin.html">Menu</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                  <li><a href="index.html">Why choose us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h4>Support</h4>
+                <ul class="footer__links">
+                  <li><a href="login.html">Account</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bar">
+              Copyright © 2024 Food Explorer. All rights reserved.
+            </div>
+          </footer>
+            <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const signupForm = document.getElementById('signupForm');
+        
+            signupForm.addEventListener('submit', async (event) => {
+              event.preventDefault(); 
+        
+              const fullname = document.getElementById('fullname').value.trim();
+              const email = document.getElementById('email').value.trim();
+              const password = document.getElementById('password').value.trim();
+<<<<<<< HEAD
+<<<<<<< HEAD
+        
+              if (!fullname || !email || !password) {
+=======
+=======
+>>>>>>> added_provider_backend
+              const ownername = document.getElementById('ownername').value.trim();
+              const tifinservicename = document.getElementById('tifinservicename').value.trim();
+              const serviceaddress = document.getElementById('serviceaddress').value.trim();
+
+        
+              if (!fullname || !email || !password || !ownername || !tifinservicename || !serviceaddress) {
+<<<<<<< HEAD
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+>>>>>>> added_provider_backend
+                alert('Please fill out all fields.');
+                return;
+              }
+        
+              try {
+<<<<<<< HEAD
+<<<<<<< HEAD
+                const response = await fetch('http://localhost:6001/v2/api/signup', {
+=======
+                const response = await fetch('http://localhost:6001/v2/api/onboarding/provider', {
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+                const response = await fetch('http://localhost:6001/v2/api/onboarding/provider', {
+>>>>>>> added_provider_backend
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  body: JSON.stringify({ fullname, email, password })
+=======
+=======
+>>>>>>> added_provider_backend
+                  body: JSON.stringify({
+                    fullname,
+                    email,
+                    password,
+                    ownername,
+                    tifinservicename,
+                    serviceaddress
+                  })
+<<<<<<< HEAD
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+>>>>>>> added_provider_backend
+                });
+        
+                const result = await response.json();
+        
+                if (response.ok) {
+                  alert(result.message); 
+<<<<<<< HEAD
+<<<<<<< HEAD
+                  window.location.href = 'login.html'; 
+=======
+                  window.location.href = "Tiffin_provider's_login.html"; 
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+                  window.location.href = "Tiffin_provider's_login.html"; 
+>>>>>>> added_provider_backend
+                } else {
+                  alert(result.message); 
+                }
+              } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+              }
+            });
+          });
+        </script>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+>>>>>>> d92b234 (Modified And added provider backend and added a new provider dashboard)
+=======
+        
+>>>>>>> added_provider_backend
+        <script src="custom.js"></script>
+
+        
+          </body>
+          </html>
+      
